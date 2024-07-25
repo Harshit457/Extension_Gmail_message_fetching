@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "OTP Reader",
+    "version": "1.0",
+    "description": "Reads OTPs from Gmail and auto-fills them on web pages.",
+    "permissions": [
+      "identity",
+      "identity.email",
+      "storage",
+      "https://www.googleapis.com/",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    
+    "oauth2": {
+      "client_id": "your client id",
+      "scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly", "https://mail.google.com"
+      ]
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
