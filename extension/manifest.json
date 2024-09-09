@@ -16,7 +16,7 @@
     },
     
     "oauth2": {
-      "client_id": "yur client id",
+      "client_id": "YOUR CLIENT ID",
       "scopes": [
         "https://www.googleapis.com/auth/gmail.readonly", "https://mail.google.com"
       ]

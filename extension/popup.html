@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OTP Autofill Extension</title>
-  <style>
-    /* Basic styling for the popup */
-    body {
-      font-family: Arial, sans-serif;
-      width: 300px;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    h1 {
-      font-size: 16px;
-      margin: 0 0 10px 0;
-    }
-    #fetch-otp {
-      padding: 8px 16px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    #status {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <h1>OTP Autofill Extension</h1>
-  <button id="fetch-otp">Fetch OTP</button>
-  <div id="status">Status will appear here.</div>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Autofill Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+      }
+      #fetch-otp {
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1>OTP Autofill Extension</h1>
+    <button id="fetch-otp">Fetch OTP</button>
+    <button id="copy-otp" style="color: white; background-color: blue">
+      Copy OTP to Clipboard
+    </button>
+    <div id="status" style="color: red">Status will appear here.</div>
+    <script src="popup.js"></script>
+  </body>
 </html>

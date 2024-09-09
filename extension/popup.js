@@ -43,6 +43,17 @@ document.getElementById("fetch-otp").addEventListener("click", () => {
                   const otp = otpMatch ? otpMatch[1] : "OTP not found";
 
                   document.getElementById("status").textContent = otp;
+                  document.getElementById('copy-otp').addEventListener('click', function () {
+                    
+                    navigator.clipboard.writeText(otp).then(
+                     function () {
+                            alert('OTP copied to clipboard!');
+                        },
+                    function () {
+                    alert('Failed to copy OTP.');
+          }
+        );
+      });
               })
               .catch(error => {
                   console.error('Error fetching message:', error);
